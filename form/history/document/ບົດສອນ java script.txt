@@ -1,0 +1,1016 @@
+﻿
+java script
+--------------
+JavaScript ແມ່ນພາສາທີ່ຂຽນໂປຣແກຣມລະບົບອິນເຕີເນັດ ເອີ້ນກັນວ່າ: ສຄິບ(Script)
+ເຊີງສ້າງ ແລະ ພັດທະນາໜ້າເວບໄຊ (ໃຊ້ລວມກັບ HTML) ແລະ ຍັງສາມາດຕອບສະໜອງໃຫ້ກັບ
+ຜູ້ໃຊ້ງານ ຫຼື ຜູ້ນຳໃຊ້ໄດ້ຫຼາຍຂື້ນ. 
+------------------------
+=============================
+lesson0 alert
+<html>
+	<body>
+		<h1>This is JavaScript</h1>
+		
+		<script>
+			window.alert(10+10);
+		</script>
+	</body>
+</html>
+=============================
+lesson1 white between script
+<html>
+<head>
+	<style>
+		body{font-family:"phetsarath OT";}
+	</style>
+		<script language='javascript'>
+			document.write("<b><font color=red size=10>ວິທະຍາໄລ ບີຊີທີ</font></b><br>");
+			document.write("<i><font color=aaffff size=10>hello world!</i></font></br>");
+		</script>
+		<script>
+			document.write("<b>ວິທະຍາໄລ ບີຊີທີ</b><br>");
+			document.write("hello world!");
+		</script>
+</head>
+</html>
+=======================
+------
+lesson2. ການຂຽນ script
+<html>
+<head>
+			<style>
+			body{font-family:"phetsarath OT";}
+			</style>
+				<script language='javascript'>
+				document.write("<b><font color=red size=10>ວິທະຍາໄລ ບີຊີທີ</font></b><br>");
+				document.write("<i><font color=aaffff size=10>hello world!</i></font></br>");
+				</script>
+				<script>
+				document.write("<b>ວິທະຍາໄລ ບີຊີທີ</b><br>");
+				document.write("hello world!");
+				</script>
+</head>
+</html>
+------------------------------
+Java Script: Confirm
+lesson3. comfirm
+<html>
+<head>
+				<script language='javascript'>
+				confirm("ທ່ານຕ້ອງການອອກຈາກໂປຣແກຣມນີ້ບໍ?");
+				</script>
+</head>
+</html>
+=========================
+lesson4. alert
+--
+<html>
+<head>
+			<script language='javascript'>
+			function aa(){//aa
+			alert("ທ່ານຈະກົດປຸ່ມນີ້ແມ່ນບໍ?");
+			}
+			</script>
+			<input type=button value=Go onclick=aa()>
+</head>
+</html>
+======================
+lesson5. ifelse alert&close.
+<html>
+<head>
+		<h3>ທົດລອງ javascript..</h3
+		<script>
+		var answer=confirm("ທ່ານຈະອອກຈາກໂປຣແກຣມບໍ?");
+		if(answer){
+			this.close();
+		}
+		else{
+		alert("ຍີນດີຕ້ອນຮັບກັບຄືນ");
+		}
+		</script>
+</head>
+</html>
+
+---------------------
+===========================
+JavaScript Can Change HTML Attribute Values
+------------------
+lesson:     ຄຣິກປ່ຽນປະໂຫຍກ.
+<html>
+<body>
+	<h2>What Can JavaScript Do?</h2>
+	<p id="demo">JavaScript can change HTML content.</p>
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+</body>
+</html>
+----------------------
+lesson: click fontsize ຄຣິກແລ້ວໃຫ້ຕົວອັກສອນໃຫ່ຍຂື້ນ
+<html>
+<body>
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+</body>
+</html> 
+---------------
+==========================
+lesson: ຄຣິກແລ້ວໃຫ້ປະຫາຍ
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+</body>
+</html>
+-----------------------------
+lesson: ຄຣິກ show ປະໂຫຍກ
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+</body>
+</html> 
+==============================
+java function
+lesson: Click ປ່ຽນປະໂຫຍກ1
+<html>
+<head>
+	<script>
+	function myFunction() {
+	  document.getElementById("demo").innerHTML = "Paragraph changed.";
+		}
+	</script>
+</head>
+<body>
+<h2>JavaScript in Head</h2>
+	<p id="demo">A Paragraph.</p>
+	<button type="button" onclick="myFunction()">Try it</button>
+</body>
+</html> 
+-----------------------------
+lesson12. Click word ປ່ຽນປະໂຫຍກ
+----------------
+<html>
+<head>
+		<h1>My web Page</h1>
+		<p id="myPar">I am a paragraph.</p>
+		<div id="myDiv">I am a div.</div>
+		<p>
+		<button type="button" onclick="myFunction()">ຄີກທີນີີ້ຈະປ່ຽນປະໂຫຍກ!</button>
+		<script>
+		function  myFunction() {
+			document.getElementById("myPar").innerHTML="Hellw Dolly.";
+			document.getElementById("myDiv").innerHTML="How are you?";
+			}
+		</script>
+</head>
+</html>
+===============================
+javascript  ການນຳໃຊ້ການສະແດງຜົນ .innerHTML
+-------------------------------
+lesson: inderHTML
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html>
+--------------------
+lesson9 check_date1
+---------------
+<html>
+<head>
+</head>
+<body>
+	<button onclick="this.innerHTML=Date()">ເວລາແມ່ນ</button>
+</body>	
+</html>
+==================
+lesson10 to. check_date2
+<html>
+<body>
+	<p>ກົດນີ້ເພື່ອເບີ່ງເວລາ.</p>
+	<button onclick="displayDate()">ດຽວນີ້ເວລາແມ່ນ?</button>
+	<script>
+	function displayDate(){
+  	 document.getElementById("demo").innerHTML = Date(); }
+	</script>
+	<p id="demo"></p>
+</body>
+<html>
+========================
+lesson11 check_date3
+-----------
+<html>
+<head>
+</head>
+<body>
+	<button onclick="getElementById('testing').innerHTML=Date()">
+	ກົດນີ້ເພື່ອເບີ່ງໂມງ</button>
+	<p id="testing"></p>
+</body>
+</html>
+============================
+
+lesson7. today is 
+---------
+<html>
+<head>
+	<script>
+		today=new  Date();
+		dd= today.getDay();
+		days= new  Array("ວັນທິດ","ວັນຈັນ","ວັນຄານ","ວັນພຸດ","ວັນພະຫັດ","ວັນສຸກ","ວັນເສົາ");
+		document.write(days[dd]);
+	</script>
+</head>
+</html>
+
+================
+lesson8. dd/mm/yy
+----
+<html>
+<head>
+	<script>
+		today=new Date();
+		d=today.getDate();
+		m=today.getMonth()+1;
+		y=today.getFullYear();
+		document.write("ມື້ນີ້ແມ່ນວັນທີ: "+d+"/"+m+"/"+y);
+	</script>
+</head>
+</html>
+=========================
+==============================
+CMS
+=========================
+lesson14 max
+<html>
+<body>
+	<p>Math.max() returns the highest value.</p>
+	<p>ຂຽນຄຳສັ່ງຊອກຫາຕົວເລກໃຫ່ຍສຸດ (0, 150, 20, 30, -8, -200)</p>
+	<button onclick = "myFunction()"> Try it </button>
+	<p id="demo"></p>
+	<script>
+		function  myFunction() {
+		document.getElementById("demo").innerHTML = Math.max(0, 150, 20, 30, -8, -200);
+		}
+	</script>
+</body>
+</html>
+
+===========================
+lesson15.min
+------
+<html>
+<body>
+	<p>Math.min() returns the lest value.</p>
+	<p>ຂຽນຄຳສັ່ງຊອກຫາຕົວເລກນ້ອຍສຸດ (0, 150, 20, 30, -8, -200)</p>
+	<button onclick = "myFunction()"> Try it </button>
+	<p id="demo"></p>
+	<script>
+		function  myFunction() {
+		document.getElementById("demo").innerHTML = Math.min(0, 150, 20, 30, -8, -200);
+		}
+	</script>
+</body>
+</html>
+
+
+===========================
+lesson16 random ຄຳນວນຕົວເລກ
+-----
+<html>
+<body>
+	<p>Math.random() returns the random number between 0 and 1.</p>
+	<p>ການຄຳນວນຫາຕົວເລກລະຫ່ວາງ 0 ແລະ 1</p>
+	<button onclick = "myFunction()"> Try it </button>
+	<p id="demo"></p>
+	<script>
+		function  myFunction() {
+		document.getElementById("demo").innerHTML = Math.random();
+		}
+	</script>
+</body>
+</html>
+=============
+lesson17 ceil ປັດຕົວເລກຂື້ນ
+---
+<html>
+<body>
+	<p>Math.ceil() round a number<strong>up</strong>to its nearest integer.</p>
+	<p>ຂຽນປັດຕົວເລກຂື້ນ (ຈາກ 4.4)ເປັນເລກ(5)</p>
+	<button onclick = "myFunction()"> Try it </button>
+	<p id="demo"></p>
+	<script>
+		function  myFunction() {
+		document.getElementById("demo").innerHTML = Math.ceil(5.3);
+		}
+	</script>
+</body>
+</html>
+
+===================================
+(JavaScript Statements variable)
+
+lesson: var number
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+<p id="demo1"></p>
+
+<script>
+var a; //var a, b, c;
+var b;
+var c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = "Number is:" + c;
+</script>
+
+</body>
+</html>
+==============================
+lesson19 webpages
+--------------
+<html>
+<head> 
+	<title>javascript</title>
+	<script>
+	var x;
+	x =prompt("Enter your name","");
+	var x;
+	x =prompt("Enter your password","");
+	alert("welcome to javascript   " +x);
+	</script>
+</head>
+</html>
+
+
+==========================
+lesson: Switch ເອົາມື້ມາສະແດງ
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0: day = "Sunday"; break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>
+==================================
+lesson25 switch
+-------
+<html>
+	<body>
+		<script>
+			var today = new Date();
+			var day = today.getDay();
+			switch (day){
+				case 0:
+					day = "ບໍມີຫັຍງກີນເລີຍ";
+				break;
+				case 1:
+					day = "ຊີ້ປາ";
+				break;
+				case 2:
+					day = "ຊີ້ນໄກ່່";
+				break;
+				case 3:
+					day = "ຜັກ";
+				break;
+				case 4:
+					day = "ຕົ້ມມີ່";
+				break;
+				case 5:
+					day = "ຊີ້ນງົວ";
+				break;
+				case 6:
+					day = "ຕົ້ມໄກ່";
+				break;
+			}
+			document.write("ມື້ນີ້ແມ່ນ:"+day);
+		</script>
+	</body>
+</html>
+======================
+lesson29 switch3 
+ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍ ນຳໃຊ້ Switch ເພື່ອສະແດງ ວັນເສົາ ແລະ ວັນອາທິດ ຖ້າບໍ່ແມ່ນວັນ ເສົາ ແລະ ອາທິດ ໃຫ້ມັນບອກວ່າ "ລໍຖ້າໃຫ້ຮອດທ້າຍອາທິດ".
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+var text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+====================
+lesson30 switch4
+ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍ ນຳໃຊ້ Switch ເພື່ອສະແດງ Monday ແລະ Friday 
+ຖ້າບໍ່ແມ່ນ Monday ແລະ Friday ໃຫ້ມັນບອກວ່າ "Looking forward to the Weekend".
+=====================================
+<html>
+<head>
+<title>JS</title>
+</head>
+<body>
+<p id="dd"></p>
+<script>
+var day;
+switch (new Date().getDay()){
+default:day="Looking forward to the weekend";break;
+case 1:day="Monday";break; 
+case 5:day="Friday"; 
+}
+document.getElementById("dd").innerHTML ="This is"+day;
+
+</script>
+</body>
+</html>
+=============================
+Array
+---------
+lesson31. array
+ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍນຳໃຊ້ Array ເພື່ອເອົາຕົວເລກ(10,300,50,60)  ມາສະແດງ
+---
+<html>
+<head>
+			<script>
+			/*
+			a=[];
+			a=[0]=10;
+			a=[1]=20;
+			a=[2]=30;
+			a=[3]=100;
+			*/
+			a=new Array(10,20,30,100);//ເອົາສະເພາະa[1]ມາສະແດງຈະຂຽນ:
+			//document.write(a[1]);//ຫຼຶທັງໝົດມາສະແດງຈະນຂຽນ:
+			//document.writ(a[0]+ ","+a[1]+ ","+a[2]+ ","+a[3]); 
+			for(x=0;x<=3;x++){
+			document.write("<br>"+a[x]);
+			}
+			</script>
+</head>
+</html>
+======================
+Array.forEach
+ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍນຳໃຊ້ Array .forEach ເພື່ອເອົາຕົວເລກ(10,300,50,60)  ມາສະແດງ
+lesson: Array.forEach()
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+	<p id="num"></p>
+	<script>
+	var n ="";
+	var num = [10,300,50,60];
+	num.forEach(number);
+	document.getElementById("num").innerHTML = n;	
+	function number(value){n = n + value + "<br>"; 
+	}
+	</script>
+</body>
+</html>
+======================
+ວຽກບ້ານ  forloop: 
+1. ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍນໍາໃຊ້ forloop ເພື່ອເອົາຕົວເລກ 0-10​ ມາສະແດງ
+2. ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍນໍາໃຊ້ forloop ເພື່ອເອົາຕົວເລກ 0-20 ມາສະແດງ ແລະ ກໍານົດໃຫ້ເລກ 0-20​ ໃຫ່ຍຂື້ນເລື່ອຍໆ
+3. ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍນໍາໃຊ້ forloop ເພື່ອເອົາຕົວເລກ 0-10​ ມາສະແດງ ແລະ ໃສ່ຈຸດຂັ້ນລະຫວ່າງກາງເລກ ແລະ ຈັດເລກໃຫ້ເປັນຮູບ ຕົວ T ກຳນົດໃຫ້ຢູ່ເຄີ່ງກາງ
+=====================
+lesson. forloop
+----
+<html>
+<head>
+			<script>
+			for(i=0;i<=20;i++){
+			document.write("<br><b><font color=red>"+i);
+			}
+			</script>
+</head>
+</html>
+======================
+lesson33
+<html>
+<head>
+<title>forloop</title>
+	<p>ການໃຊ້ຄຳສັ່ງ forloop ເພື່ອເອົາຕົວເລກມາສະແດງ</p>
+	<script>
+	for(a=0; a<=10; a++){
+		document.write("<br><i><big>"+a);
+	}	
+	</script>
+</head>
+</html>
+
+=====================
+lesson: forloop ເອົາ i have a fun ມາສະແດງ10
+<html>
+	<body>
+		<script>
+			var i=1;
+			for(;i<=10; i+=1){
+			document.write("I having fun"+"<br>");
+			}
+		</script>
+	</body>
+</html>
+=======================
+lesson23 while_loop 
+----
+<html>
+<head>
+	<script>
+	function myFunction(){
+		var text = "";
+		var i = 0;
+		while(i<10){
+		// x += y; = x = x+y;
+			text += "<br>ຕົວເລກແມ່ນ :"+i
+			i++;
+		}
+		document.getElementById('tests').innerHTML=text;
+	}
+	</script>
+</head>p
+<body>
+	<p>ກົດປູ່ມເພື່ອເບີງການທໍາງານຂອງ While Loop</p>
+	<button onclick="myFunction()">click me</button>
+	<p id="tests"></p>
+</body>
+</html>
+==============
+lesson24 while_loop2
+ຈົ່ງຂຽນໂປຣແກຣມ ນໍາໃຊ້ while loop ໂດຍ ໃຫ້ "BMW","Volvo","Saab","Ford" ມາສະແດງ
+---
+<html>
+<body>
+<p id="demo"></p>
+<script>
+	cars = ["BMW","Volvo","Saab","Ford"];
+	var i = 0;
+	var text = "";
+		while (cars[i]) {
+    	text += cars[i] + "<br>";
+   	 i++;
+	}
+	document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+================================
+ການນຳໃຊ້ break;
+lesson39
+ຈົ່ງຂຽນໂປຣແກຣມໂດຍນໍາໃຊ້ Break ຂຽນຕົວເລກແຕ່ 0-10 ມາສະແດງ ແລະ break ຕົວເລກໄວ້ຮອດເລກ 5 ສ່ວນທີ່ເຫຼືອບໍ່ໃຫ້ອອກມາ
+==================
+<html>
+<body>
+<h2>JavaScript Loops</h2>
+<p>A loop with a <b>break</b> statement.</p>
+<p id="a"></p>
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("a").innerHTML = text;
+</script>
+</body>
+</html>
+======================
+lesson40: 
+ຈົ່ງຂຽນໂປຣແກຣມ ເພື່ອຊອກຫາອາຍຸ ໂດຍໃຫ້ປ້ອນ ປີເກີດ ກັບ ປີປະຈຸບັນ ແລ້ວ ອາຍຸຈະອອກມາ.
+----
+<html>
+<head>
+	<script>
+		function cal_age(){
+			var x = document.first_form.n_year.value;
+			var y = document.first_form.b_year.value;
+			var z ;
+			z = x - y;
+			document.write("ອາຍຸຂອງເຈົ້າແມ່ນ="+z+"ປີ");
+		}
+	</script>
+</head>
+<body>
+	<form name=first_form>
+	ປີປະຈຸບັນ<input type=text name=n_year>
+	ປີເກີດ<input type=text name=b_year>
+	<input type=button value=Go onclick="cal_age()">
+	</form>
+</body>
+</html>
+======================
+JavaScript Event 
+lesson. mouseover.
+-----------
+<html>
+	<head>
+	<script>
+		function abc(){
+		alert("ນີ້ແມ່ນໝີ");
+		}
+	</script>
+	</head>
+	<body>
+	 	<img src="e.jpg" width=300 height=300 onmouseover="abc()">
+	</body>
+</html>
+=======================
+lesson: onmousover.
+--
+<html>
+<head>
+</head>
+<body>
+	<p id=show onmouseover="alert('ນີ້ແມ່ນບົດຮຽນ javascript')">
+		learn javascript
+	</p>
+</body>
+</html>
+=======================
++Javascript if else if statement
+---------------------------------
+lesson: True and false.
+<script>
+	if(1 == 2){
+		document.write('This is True.');
+	}else{
+		document.write('This is False.');
+	}
+</script>
+------------------------
+<script>
+	var x = 10;
+	var y = 20;
+	if(x == y || x == 10){ //ຄ່າຈະເປັນ true; ຖ້າໃສ່ && ຄ່າຈະເປັນ false
+		document.write('This is true');
+	}else {
+		document.write('This is false');
+	}
+</script>
+-================================
++Javascript if elseif statement
+lesson20. check-age
+ຈົ່ງຂຽນໂປຣແກຣມ ໂດຍນຳໃຊ້ if else ເພື່ອປ້ອນອາຍຸ 
+ຖ້າອາຍຸ <15 ໃຫ້ບອກວ່າ "ເດັກນ້ອຍ";
+ຖ້າອາຍຸ  >=15 - 25 ໃຫ້ບອກວ່າ "ໄວລຸ້ນ";
+ຖ້າອາຍຸ >=25 - 35 ໃຫ້ບອກວ່າ "ຜູ້ໃຫ່ຍ";
+ຖ້າອາຍຸ >35 ໃຫ້ບອກວ່າ "ໄວທອງ";
+----
+<html>
+<head>
+	<script>
+		function chkage(){
+			var age = document.form1.age.value;
+			if(age<15){
+				document.write("ເດັກນ້ອຍ");
+			}
+			else if(age>25){
+				document.write("ຜູ້ໃຫຍ່");
+			}
+			else if(age>=15 && age<=25){
+				document.write("ໄວລຸ້ນ");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name=form1>
+		ອາຍຸ:<input type="text" name="age" onChange="chkage()">
+	</form>
+</body>
+</html>
+================================
+========================
+lesson24 ຄຣິກປ່ຽນສີ
+--------------
+<html>
+<head>
+	<title>Mouse Events</title>
+	<p><center><font color=red size=5></font></center><br><br>
+	<script language="javascript">
+	function  newcolor(){
+	if(head.className=="style1")
+		{head.className="style2";}
+	else
+		{head.className="style1";}
+	}
+	</script>
+</head>
+<style>
+	H1.style1{color:00ff00;font-style:italic}
+	H1.style2{color:ff1493;font-style:normal}
+</style>
+<body bgcolor=lavender>
+	<p><font color=4169e1 size=5>write a script that will chage the  color of an H1 element when the<br>
+	<p>mouse is moved over it, and to another color when the mouse pointer<br>
+	<p>moves out of it.</font><br>
+	<h1 id="head" class="style2"onmouseover="newcolor()"onmouseout="newcolor()">
+	Move the mouse pointer over this line and see<br>what heppens?</h1>
+</body>
+</html>
+========================
+--------------------
+
+javascript if eles 
+lesson18. calulator 
+-----
+<html>
+<head>
+	<title>javascript</title>
+	<script>
+	function  compute(form){
+	if (confirm("Are you sure?"))
+	form.result.value=eval(form.expr.value)
+	else
+	alert("Please come back again.")
+	}
+	</script>
+</head>
+<body>
+	<form>
+	Enter an expression:
+	<input type="text" name="expr" size=15><br><br>
+	<input type="button" value="Calculate" onClick="compute(this.form)">
+	<br><br><br>
+	Result:
+	<input type="tetxt" name="result" size=15>
+	</form>
+</body>
+</html>
+
+==========================
+ການນໍາໃຊ້ If  Statement
+lesson25 click_fill ຕື່ມຂໍ້ມູນໃສ.
+---------
+<html>
+	<head>
+	<script>
+		function chose(){
+			var x = prompt("ປ້ອນຂໍ້ມູນ");
+			if(x){
+				document.write(x);
+			}
+			else {
+				this.close();
+			}
+		}
+	</script>
+	</head>
+	<body>
+		<button onclick="chose()">click me</button>
+	</body>
+</html>
+=====================
+lesson26 pree ok ເອົາຊື່ແລະ ລະຫັດຜ່ານມາສະແດງ.
+<html>
+<head>
+<script>
+	//0confirm("ກົດ OK ເພື່ອໄປຕໍ່");
+	var x;
+	var y;
+	x = prompt("ປ້ອນຊື່ຜູ້ນໍາໃຊ້ລະບົບ","");
+	y = prompt("ປ້ອນລະຫັດຜ່ານ","");
+	//alert("ສະບາຍດີ "+x);
+	document.write("ສະບາຍດີ "+x+"ລະຫັດຜ່ານຂອງທ່ານແມ່ນ"+y);
+</script>
+</head>
+</html>
+=====================
+lesson27. click_close
+---
+<html>
+<head>
+	<script>
+		function toclose(){
+			this.close();
+		}
+	</script>
+</head>
+<body>
+<button onclick="toclose()">close</button>
+</body>
+</html>
+=====================
+lesson28. link location
+<html>
+<head>
+	<script>
+		function face(){
+			window.location="www.facebook.com";
+		}
+		function you(){
+			window.location="www.youtube.com";
+		}
+	</script>
+</head>
+<body>
+<button onclick="face()">facebook.com</button>
+<button onclick="you()">youtube.com</button>
+</body>
+</html>
+=================
+lesson showdate
+-----------
+<html>
+	<body>
+		<script>
+			var today = new Date();
+			var Get_Date = today.getDate();
+			var Get_Month= today.getMonth()+1;
+			var Get_Year = today.getFullYear();
+			
+			document.write("ວັນທີ່"+Get_Date+"<br>");
+			document.write("ເດືອນ"+Get_Month+"<br>");
+			document.write("ປີ"+Get_Year+"<br>");
+		</script>
+	</body>
+</html>
+
+=========================
+
+======================
+lesson26. checkbox input type
+---
+<html>
+	
+<head>
+	
+<script>
+		
+function myFunction(){
+			
+	if(document.myForm.fname.value==""){
+				
+	alert("ກະລຸນາປ້ອນຊື່ແດ່");
+				
+	return false;
+			
+	}
+else if(document.myForm.lname.value==""){
+				
+		alert("ກະລຸນາປ້ອນນາມສະກຸນແດ່");
+				
+		return false;
+			
+	}
+else if(document.myForm.password.value==""){
+				
+		alert("ກະລຸນາປ້ອນລະຫັດຜ່ານແດ່");
+				
+		return false;
+			
+	}
+else {
+			
+	var firstname = document.myForm.fname.value;
+			
+	var lastname = document.myForm.lname.value;
+			
+	var password = document.myForm.password.value;
+				
+	document.write(firstname+"<br>"+lastname+"<br>"+password);
+			
+}
+		
+}
+	
+</script>
+	
+</head>
+	
+<body>
+		
+<form name=myForm>
+			
+ຊື່:<input type="text" name="fname"><br>
+			
+ນາມສະກຸນ:<input type="text" name="lname"><br>
+			
+ລະຫັດຜ່ານ:<input type="password" name="password"><br>
+			
+<input type=button value="ບັນທືກ" onclick="myFunction()">
+		
+</form>
+	
+</body>
+
+</html>
+===========================
+
+==========================
+lesson ຄິດໄລ່ດອກເບ້ຍ
+<html>
+	<head>
+		<style>
+			body{
+				font-family:Phetsarath OT;
+			}
+		</style>
+	</head>
+	<body>
+	<script>
+			var pv=5000000;
+			var t=3;
+			var r=7/100;
+			var I;
+			var fv;
+			I=pv*r*t;
+			fv=pv*(1+(r*t));
+			document.write("ຈົ່ງຂຽນ js ເພື່ອຄີດໄລ່ດອກເບ້ຍຂອງຈໍານວນເງີນ 5,000,000 ກີບ ໄລຍະເວລາ 3ປີ ດອກເບ້ຍ 7% ຕໍ່ປີ<br>");
+			document.write("ດອກເບ້ຍທີ່ໄດ້ຮັບ="+I+"<br>");
+			document.write("ເງີນລວມ="+fv);
+		</script>
+		<p id="interest"></p>
+	</body>
+</html>
+============================
+lesson check_username.
+---
+<html>
+<head>
+<script>
+	function check(){
+		if(document.getElementById('fname').value=="somxai" && document.getElementById('password').value=="123"){
+			document.write("ສະບາຍດີສົມຊາຍ");
+		}
+		else if(document.getElementById('fname').value=="john" && document.getElementById('password').value=="1234"){
+			document.write("ຍີນດີຕ້ອນຮັບທ່ານ john");
+		}
+		else{
+			document.write('ທ່ານບໍ່ໄດ້ຮັບອະນຸຍາດໃຫ້ເຂົ້າ website ນີ້');
+		}
+	}
+</script>
+</head>
+<body>
+<form>
+	ຊື່<input type=text id='fname'><br>
+	ລະຫັດຜ່ານ<input type=text id='password'><br>
+	<input type=button value=Go onclick='check()'>
+</form>
+</body>
+</html>

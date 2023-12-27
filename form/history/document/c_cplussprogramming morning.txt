@@ -1,0 +1,1154 @@
+﻿
+================
+ພາສາ c: c plusplus c++
+=================
+ພາສາ c ເປັນພາສາ ໂປຣແກຣມມີງທົ່ວໄປ ທີ່ນຳໃຊ້ ໃນການພັດທະນາ ຊອບແວ ໄດ້ຫລາຍຮູບແບບ.  
+ມາຈາກພາສາ BCPL (Basic Combined Programming Language) ແລະ ພາສາ B.  ພັດທະນາຂື້ນໃນປີ 1967 ໂດຍ ມານຕິນ ລີຊາດ (Martin Richard) ແລະ ທ່ານ ເດນນິສ ຣິທຊີ (Dennis Ritchie) ໃນຊ່ວງປີ 1971 ເຖີງ 1973 ໄດ້ເພີ່ມຊະນິດຂໍ້ມູນ ແລະ ຄວາມສາມາດອື່ນໆ ໃຫ້ຫຼາຍຂື້ນ ແລະ ນໍາພາສາ C ໄປພັດທະນາລະບົບປະຕິບັດການ ຢູນິກ(Unix) ໃນເຄື່ອງຄອມພິວເຕີ, ພາສາ C   ເປັນທີ່ນິຍົມໃຊ້ຢ່າງຫຼວງຫຼາຍໃນຊ່ວງປີ 1980 ຈົນມີຄວາມພະຍາຍາມກໍານົດມາດຕະການຂອງພາສາເພື່ອໃຫ້ສາມາດໃຊ້ ພາສາ C ໄດ້ໃນຄອມພິວເຕີອື່ນໆ ໃນປີ 1983 ໂດຍ ANSI(The American National Standards Institute)ໄດ້ຕັ້ງຄະນະກຳມະການ X3J11 ເພື່ອສ້າງມາດຕະການດັ່ງກ່າວ ແລະ ໄດ້ຮັບການກວດສອບ  ແລະ ຍອມຮັບໂດຍ ANSI ແລະ ISO(The International Standards Organization) ໂດຍມີການພິມມາດຕະການຂອງພາສາ  C ໃນປີ 1990 ຈາກຄວາມມີປະສິດທິພາບ ແລະ ຄວາມສາມາດທຳງານໃນຄອມພິວເຕີອື່ນໆ. ຈາກນັ້ນພາສາ C ຈື່ງໄດ້ມີການນຳໄປພັດທະນາລະບົບປະຕິບັດການຕ່າງໆ ແລະ ໃຊ້ເປັນຕົ້ນແບບຂອງພາສາອື່ນໆ ທີ່ສຳຄັນໃນປະຈຸບັນ ຄື: ພາສາ C++, Java..... ເປັນຕົ້ນ.
+=======================================
+ລາຍລະອຽດ:  c programming.com
+======================
+C/C++
+- ພາສາ c ເປັນພາສາ ໂປຣແກຣມມີງທົ່ວໄປ ທີ່ນຳໃຊ້ ໃນການພັດທະນາ ຊອບແວ ໄດ້ຫລາຍຮູບແບບ.  
+- ຈະພັດທະນາໂປຣແກຣມ ໃນ C, C++ ໄດ້ແນວໃດ?
+ພວກເຮົາຕ້ອງການ compiler ຊອບແວ ເພື່ອ compile (ຄອມພາຍ) = ປ່ຽນແປງ code (ໂຄດ) ໃຫ້ເປັນ ພາສາ ຂອງເຄື່ອງຈັກ (machine Language).
++ Compiler ທີ່ນິຍົມໃຊ້: 
+	Dev C++,  CodeBlock, Visual C,C++ ອື່ນໆ... 
+	ເວລາ Download CodeBlock ຕ້ອງມີ ຄຳວ່າ: mingw
+=========================================
+ວິທີການພັດທະນາໂປຣແກຣມ:
+=========================================
+ກໍານົດບັນຫາ  
+= ແບ່ງບັນຫາ 
+=  ວາງແຜນ
+=  ແກ້ໄຂ ບັນຫາ ແລະ ກວດກາຄືນ
+============================================
++ ຮູບແບບ ແລະ ໂຄງສ້າງ ຂອງພາສາ C 
+	ໂຄງສ້າງຂອງພາສາ C ຈະຕ້ອງສຶກສາຮູບແບບພື້ນຖານຂອງພາສາ ແລະ ໄວຍາກອນຂອງພາສານັ້ນ, ຮູບແບບພື້ນຖານຈະແບ່ງອອກ ເປັນສ່ວນຍ່ອຍໆ ເອີ້ນວ່າ: ຟັງເຊີນ(function) 
+------------------------
+	#include <stdio.h> <= header ສ່ວນຫົວ 
+	void main() <= ແມ່ນ function
+	{
+	/*Display message to standard output*/ <= ແມ່ນ Comment
+	printf("My first program"); <= ແມ່ນ Statement 
+	}
+	document.write();
+=======================
+	ຜົນການສະແດງແມ່ນ: My first program.
+====================================
++ ເວລາພັດທະນາ ຫລື ຂຽນ ໂປຣແກຣມ ຕ້ອງ save ເປັນ ຊື່ file ເປັນນາມສະກຸນຫຍັງ:
+Save ຊື່ເປັນນາມສະກຸນ  .c  (ສະເພາະຂຽນ C)  ເປັນ  .cpp  ສະເພາະ ພາສາ C++ 
+============================================
+ວິທີຂຽນ: ພາສາ C
+#include  <stdio.h>  //stdio = standard input output.  h  = header
+int main()
+{
+ຂຽນ code ຢູ່ລະຫວ່າງນີ້...
+}
+=============================================
+ພາສາ C++
+#include <iostream.h>
+int main()
+{
+	ຂຽນ code .....
+}
+==============================
+ກ່ອນອື່ນໄປສ້າງໂຟເດີ ໃສ່ຊື່ຕົນເອງ ແລະ ສ້າງໂຟເດີ C/C++ ຢູ່ຊ່ອງD 
+ຕົວຢ່າງ:  ເອົາຄຳເວົ້າທຳມະດາ ມາສະແດງ:
+ໃນພາສາ C   
+lesson1.c
+#include  <stdio.h>
+int main(){
+printf("Hello"); 
+system("pause");
+} 
+-----------
+- ຕົວທີ່ມາສະແດງຜົນແມ່ນ: Hello
+================================
+ພາສາ C++    .cpp 
+#include <iostream.h>
+using namespace std;
+int main(){
+cout<<"Welcome";
+system("pause");
+return 0; 
+}
+ຕົວທີ່ມາສະແດງຜົນແມ່ນ: Welcome
+===================================
++ ການເພື່ມຄໍາອະທິບາຍໃສ່ໃນ code ເວລາຂຽນ ເພື່ອໃຫ້ຮູ້ວ່າ code ທຳໜ້າທີ່ຫຍັງ?
+- ການໃຊ້ ຄອມເມັນ(comment)
+1. // ເປັນແຖວ
+2. /*.....*/ ກວມທັງໝົດ
+ຕົວຢ່າງ:
+//This is a comment with a line
+//to print a word Hello world! 
+--------------------
+/*
+This is a block comment 
+with multiple line;
+This is how to declare variable
+int a,  float b
+*/
+===========================================
+ປະເພດຂໍ້ມູນ:
+ໃນ C, C++ ພວກເຮົາຈະຕ້ອງກຳນົດ ປະເພດຂໍ້ມູນ ໃຫ້ແຕ່ລະຕົວປ່ຽນ(ຕົວລັບ) variable 
+ປະເພດຂໍ້ມູນທີ່ໃຊ້ມີດັ່ງນີ້:  
+=====================
+ປະເພດຂໍ້ມູນ		ອະທິບາຍ   		ສະແດງຜົນໃນພາສາ C
+char		ຕົວໜັງສື ຕົວດຽວ 	%c   char name=s; printf(%c);
+char[n]		ຕົວໜັງສືຫລາຍຕົວ	%s   char[10] name=seng; prnitf(%s)
+int (integer)	ເລກຖ້ວນ		%d   
+float		ເລກເສດ 		%f 
+double		ເລກເສດ 		%f   
+====================================
+ES 	Description ASCll 		encoding 
+----------------------------------------
+\n	new line ແມ່ນຄຳສັ່ງລົງແຖວ 	x0a
+\a 	alert			x07
+\b 	backspace		x08
+\r 	carriage return		x0d
+\t 	horizontal tab ລວງນອນ	x09
+\v 	vertical tab ລວງຕັ້ງ	x0b
+\'  	single quote ກຳນົດຂີດ	x027
+\"  	double quote ກຳນົດວົງຢືມ	x022
+\\ 	backslash 		x5c
+\0 	ແທນຄ່າ NULL ຄືຄ່າວ່າງ
+ເປີເຊັນ %		%%
+===========================
+ຫຼັກການ: ການຄິດໄລ່ເລກ ຫຼື ຄຳນວນຜົນຕ່າງໆ ຈະຕ້ອງໃຊ້ການອ້າງອີງຂອງປະເພດຂໍ້ມູນ 2 ຊະນິດນີ້ຄື:
+	int ໃຊ້ກັບຈຳນວນເລກຖ້ວນ.
+ແລະ	float  ໃຊ້ກັບຈຳນວນເລກເສດ.
+----------------
++ ການວາງຕົວປ່ຽນຂຽນດັ່ງນີ້:  	
+ປະເພດຂໍ້ມູນ  ແລະ ຊື່ຕົວປ່ຽນ
+ຕົວຢ່າງ: 
+ກຳນົດ ໃຫ້ a   ເກັບຂໍ້ມູນ ເລກຖ້ວນ
+	int  a;
+----
+ກຳນົດຕົວ b  ເລກເສດ  
+	float  b; 
+ອື່ນໆ...
+----------------
++ ມີວິທີການກໍານົດ ເປັນກຸ່ມ:  
+int  x, y;
+float s, d, f;
+===========================================
+ການສະແດງຜົນໃນພາສາ c:
+1. ເອົາຄໍາເວົ້າມາສະແດງ ໃຊ້ຄໍາສັ່ງ:  printf(".....");
+			printf("Hello");
+2.​ ເອົາຕົວປ່ຽນມາສະແດງ:  printf(ຕົວປ່ຽນ);  ບໍ່ມີວົງຢືມ
+			pritntf(a);  a=1;
+3. ເອົາທັງຄໍາເວົ້າ ແລະ ຕົວປ່ຽນມາສະແດງ:  printf("ຄຳເວົ້າທີ່ຈະເອົາມາສະແດງ ", ຕົວປ່ຽນ);
+			pritntf("Name: ", x);  x=noy;
+4. ປ້ອນຂໍ້ມູນເຂົ້າໄປໃນຕົວປ່ຽນ:   scanf("ປະເພດຂໍ້ມູນ", &ຊື່ຕົວປ່ຽນ) 
+	ຫຼື 		gets(ຊື່ຕົວປ່ຽນ); x; 
+			scanf("%c",); 
+			 printf("%c",name);
+==================================
+ຕົວຢ່າງ: ປ້ອນຂໍ້ມູນທີ່ເປັນ ເລກຖ້ວນ ຂອງຕົວປ່ຽນ int a; ໃຫ້ເກັບໄວ້ ໃນ a
+	int a;
+	scanf("%d",&a);
+ປ້ອນຂໍ້ມູນເຂົ້າໄປໃນຕົວປ່ຽນ ເລກເສດ: 
+	float  b;
+	scanf("%f",&b);    5.24
+ປ້ອນຂໍ້ມູນເຂົ້າໄປໃນຕົວປ່ຽນ ເລກເສດ: 
+	 double  c;   5.242424
+	 scanf("%f",&c);
+ປ້ອນຂໍ້ມູນເຂົ້າໄປໃນຕົວປ່ຽນ ຕົວໜັງສື:  
+	char  d;  (ຈໍານວນ 1 ຕົວອັກສອນ)
+	scanf("%c",&d);
+===============================================
+ການນຳໃຊ້ປະເພດຂໍ້ມູນ: char ກຳນົດຕົວອັກສອນຕົວດຽວ
+----------------
+Lesson2 char
+1. ຈົ່ງວາງຕົວປ່ຽນ name ເພື່ອຮັບເອົາ ຄ່າ N ອອກມາສະແດງ. 
+	ປະເພດຂໍ້ມູນກຳນົດເປັນ char ການສະແດງຜົນຂໍ້ມູນ %c
+#include <stdio.h>
+void main()
+{
+  char name;
+  name ='N';
+  printf("%c",name);
+}
+----------------------------------
+lesson3 char[]
+char [] ຕົວອັກສອນຫຼາຍຕົວ
+ຈົ່ງວາງຕົວປ່ຽນ name ເພື່ອຮັບເອົາຊື່ Jack ອອກມາສະແດງ.
+	ປະເພດຂໍ້ມູນກຳນົດເປັນ char [n] ການສະແດງຜົນຂໍ້ມູນ %s
++ ປະເພດຂໍ້ມູນ:
+char, char[n], int, float, double
++ ການສະແດງຜົນຂໍ້ມູນ:
+%c, %s, %d, %f
+
+
+
+#include <stdio.h>
+void main()
+{
+  char name[10]="jack";
+  name;
+  printf("%s",name);
+}
+=================================
+lesson4.c
+ຈົ່ງວາງຕົວປ່ຽນເພື່ອປ້ອນຊື່ ແລະ ເອົາຊື່ທີ່ເຮົາປ້ອນນັ້ນມາສະແດງ.
+		char[]; ການສະແດງຜົນແມ່ນ: %s
+	ໂດຍໃຊ້ຄຳສັ່ງ  scanf("ປະເພດຂໍ້ມູນ", &ຊື່ຕົວປ່ຽນ)
+		printf("ຄຳເວົ້າ ຫຼື ການສະແດງຜົນ", ຊື່ຕົວປ່ຽນ);
+
+#include <stdio.h>
+int main()
+{
+    char name[25];
+    scanf("%s", name);
+    printf("%s \n", name);
+}
+--------------------------------
+lesson5.c
+ຈົ່ງວາງຕົວປ່ຽນ name ເພື່ອປ້ອນຊື່ ແລະ ເອົາຊື່ທີ່ເຮົາປ້ອນນັ້ນມາສະແດງ.
+		char[]; ການສະແດງຜົນແມ່ນ: %s
+	ໂດຍໃຊ້ຄຳສັ່ງ  gets(&ຊື່ຕົວປ່ຽນ)
+		printf("",ຊືີ່ຕົວປ່ຽນ);
+
+
+#include <stdio.h>
+int main()
+{
+    char name[20];
+    gets(name);
+    printf("%s ",name);
+    system("pause");
+}
+===========================================
+ການນຳໃຊ້ int ເລກຖ້ວນ 
+1.  ຈົ່ງວາງຕົວປ່ຽນ a ເພື່ອຄຳນວນ ເອົາຕົວເລກ 100 ມາສະແດງ.(a=100) 
+	ປະເພດຂໍ້ມູນ ໃຫ້ເປັນເລກຖ້ວນ. ການສະແດງຜົນແມ່ນ: %d
+2. ຈົ່ງກໍານົດຕົວປ່ຽນ a,b,c ເພື່ອທຳການຄຳນວນຜົນບວກຂອງຕົວປ່ຽນ a=10 ແລະ b=20  ແລະ ກຳນົດໃຫ້ແຕ່ ຕົວປ່ຽນ c=30 ມາສະແດງ 
+	ປະເພດຂໍ້ມູນ ໃຫ້ເປັນເລກເສດ. ການສະແດງຜົນແມ່ນ: %f
+
+#include <stdio.h>
+void main()
+{
+   	int a;
+   	a=100;
+	printf("%d",a);
+}
+======================================
+6. ຈົ່ງກໍານົດຕົວປ່ຽນ a,b,c ເພື່ອທຳການຄຳນວນຜົນບວກຂອງຕົວປ່ຽນ a=10 ແລະ b=20  ແລະ ກຳນົດໃຫ້ແຕ່ ຕົວປ່ຽນ c=30 ມາສະແດງ 
+	ປະເພດຂໍ້ມູນ ໃຫ້ເປັນເລກເສດ. ການສະແດງຜົນແມ່ນ: %f
+
+
+#include <stdio.h>
+void main()
+{
+	float a,b,c;
+	a=30;
+	b=40;
+	c=a+b;
+	printf("%f",c);
+}
+
+=================================
+lesson8: 
+7. ຈົ່ງວາງຕົວປ່ຽນ name ເພື່ອຮັບເອົາຊື່ Janifer ແລະ ວາງຕົວປ່ຽນ age ເພື່ອຮັບເອົາ ອາຍຸ 20 ປີ ມາສະແດງ.
+	ປະເພດຂໍ້ມູນກຳນົດເປັນ char[n]  int
+My name is ....... I'm ..... years old. 
+
+#include<stdio.h>
+void main()
+{
+    char name[]="Janifer";
+    int age=20;
+printf("%s is %d years old.",name,age);
+}
+=======================================
+lesson9:
+8. ຈົ່ງວາງຕົວປ່ຽນ ເພື່ອຄິດໄລ່ຜົນບວກດັ່ງນີ້: 
+	a=50, b=100, c=? ພ້ອມເອົາຜົນອອກ c ມາສະແດງ.
+		(ປະເພດຂໍ້ມູນເປັນເລກຖ້ວນ)
+	ວາງຕົວປ່ຽນເພື່ອຄູນເລກ x=10; y=20  z=? 	
+	ພ້ອມເອົາຜົນຄູນ z ມາສະແດງ.  (ປະເພດຂໍ້ມູນກຳນົດເປັນເລກເສດ)
+
+#include <stdio.h>
+void main()
+{
+    int a,b,c;
+    a=50;
+    b=100;
+    float x,y,z;
+    x=10;
+    y=20;
+    z = x*y;
+    c = a+b;
+    printf("a*b = %d\n x/y = %f",c,z);
+}
+========================
+9. ຈົ່ງວາງຕົວປ່ຽນ name ເພື່ອປ້ອນຊື່ ທີ່ຕ້ອງການ ແລະ ຮັບເອົາຊື່ທີ່ປ້ອນນັ້ນອອກມາສະແດງ. 
+ໂດຍນຳໃຊ້ຄຳສັ່ງ scanf();
+
+#include <stdio.h>
+void main()
+{
+  char name[20];
+  printf("Enter name: ");
+    scanf("%s",name);
+    printf("My name is %s.\n",name);
+
+    system("pause");
+}
+==================================
+lesson10. 
+10. ຈົ່ງວາງຕົວປ່ຽນ ເພື່ອປ້ອນຂໍ້ມູນ ແລະ ເອົາຂໍ້ມູນທີ່ປ້ອນອອກມາສະແດງ: 
+ນໍາໃຊ້ຄໍາສັ່ງ scanf("ປະເພດຂໍ້ມູນ", &ຊື່ຕົວປ່ຽນ);
+ໂດຍໃຫ້ປ້ອນຄ່າຂອງຕົວປ່ຽນ x ແລະ y  ຈາກນັ້ນ ວາງຕົວປ່ຽນ z ເພື່ອຮັບເອົາຄ່າ 
+ແລ້ວເອົາຄ່າ z ມາສະແດງ. 
+
+#include<stdio.h>
+int main()
+{
+    int x,y,z;
+    printf("Enter x value:");
+        scanf("%d",&x);
+    printf("Enter y value:");
+        scanf("%d",&y);
+    z = x+y;
+    printf("Summary of x+y is :%d",z);
+}
+==================
+11. ຈົ່ງວາງຕົວປ່ຽນ ເພື່ອປ້ອນຂໍ້ມູນ ແລະ ເອົາຂໍ້ມູນທີ່ປ້ອນອອກມາສະແດງ: 
+ນໍາໃຊ້ຄໍາສັ່ງ scanf("ປະເພດຂໍ້ມູນ", &ຊື່ຕົວປ່ຽນ);
+ໂດຍໃຫ້ປ້ອນ ຊື່ອາຫານ ແລະ ລາຄາ ວາງຕົວປ່ຽນ food ແລະ price ຈາກນັ້ນ ເອົາຊື່ອາຫານ ແລະ ລາຄາ ມາສະແດງ. ປະເພດຂໍ້ມູນ: char[n] float;
+#include <stdio.h>
+int main()
+{
+    char food[50];
+    float price;
+    printf("Enter Food:");
+        scanf("%s",&food);
+    printf("Enter price:");
+        scanf("%f",&price);
+    printf("Food is:%s. price is:%f",food,price);
+}
+==================
+homework:
+12. ຈົ່ງວາງຕົວປ່ຽນ name, age, village, tel, status ເພື່ອປ້ອນ ຊື່, ອາຍຸ, ບ້ານ, ເບີໂທ, ສະຖານະ ແລະ ເອົາຂໍ້ມູນທີ່ປ້ອນນັ້ນອອກມາສະແດງ. 
+ນຳໃຊ້ຄຳສັ່ງ scanf();
+My name is ... 
+I'm ... years old.
+I live .... village.
+tell is ....
+I'm....
+
+--------------
+#include <stdio.h>
+void main()
+{
+   char name,village[100];
+   char status[30];
+    int age,tell;
+    printf("Enter Name = ");
+        scanf("%s",&name);
+    printf("Enter Age = ");
+        scanf("%d",&age);
+    printf("Enter Village = ");
+        scanf("%s",&village);
+    printf("Enter Tell = ");
+        scanf("%d",&tell);
+    printf("Enter Status = ");
+        scanf("%s",&status);
+    printf("\nMy name is %s. \nI'm %d years old. \nI live %s village. \nTell is %d\nI'm %s\n",&name,age,&village,tell,status);
+}
+====================
+lesson13.c
+13. ຈົ່ງວາງຕົວປ່ຽນ ເພື່ອປ້ອນຂໍ້ມູນ ແລະ ເອົາຂໍ້ມູນທີ່ປ້ອນອອກມາສະແດງ: 
+ນໍາໃຊ້ຄໍາສັ່ງ scanf("ປະເພດຂໍ້ມູນ", &ຊື່ຕົວປ່ຽນ);
+ໂດຍໃຫ້ປ້ອນຄ່າຂອງຕົວປ່ຽນ a,b,c  ຈາກນັ້ນ ວາງຕົວປ່ຽນ d ເພື່ອຮັບເອົາຄ່າ a,b,c
+ແລ້ວເອົາຄ່າ d ມາສະແດງ.  ກຳນົດໃຫ້ a*b+c
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("Enter x value:");
+        scanf("%d",&a);
+    printf("Enter y value:");
+        scanf("%d",&b);
+    printf("Enter y value:");
+        scanf("%d",&c);
+    d=a*b+c;
+    printf("Summary of a*b+c is :%d",d);
+}
+< ? :
+=========================================
+lesson14.c
+14. ຈົ່ງວາງຕົວປ່ຽນເພື່ອ x,y ປ້ອນຂໍ້ມູນ ຊອກຫາຄ່າ ນ້ອຍສຸດ(MIN).ໂດຍນຳໃຊ້ scanf();
+	ໂດຍປ້ອນ ຄ່າ X ແລະ Y ຖ້າຕົວເລກໃດ ໜ້ອຍສຸດ ໃຫ້ສະແດງໂຕເລກນັ້ນອອກມາ.
+
+#include <stdio.h>
+int main()
+{
+int x,y, min;
+    printf("Enter X:");
+        scanf("%d",&x);
+    printf("Enter Y:");
+        scanf("%d",&y);
+    min=(x<y)? x:y;
+    printf("Minimum value is=%d",min);
+}
+=====================================
+lesson15 forloop.c
+15. ຈົ່ງວາງຕົວປ່ຽນ i ເພື່ອເອົາຕົວເລກ 1-10 ມາສະແດງ ໂດຍນໍາໃຊ້ for loop.
+#include <stdio.h>
+int main()
+{
+int i;
+for(i=1; i<=10; i++)
+printf("%d\n", i);
+}
+=================================
+lesson16.c
+16. ຈົ່ງວາງຕົວປ່ຽນ i ເພື່ອເອົາຕົວເລກ 1-10 ໂດຍໃຫ້ຕົວເລກ ສະແດງເປັນເລກຄູ່ 
+ຕົວຢ່າງ: 2,4,6... ໂດຍນໍາໃຊ້ for loop.
+
+#include <stdio.h>
+int main(){
+int i;
+for(a=2;a<=10;a+=2)
+    printf("%d\n",a);
+}
+
+=====================================
+lesson17 while loop.c
+17. ຈົ່ງວາງຕົວປ່ຽນ i ໂດຍນໍາໃຊ້ while loop  ເອົາຕົວເລກ 1-5 ມາສະແດງ.
+
+#include <stdio.h>
+void main()
+{
+	int a;
+    	a=1;
+	while(a<=5){
+	printf("%d\n",a);
+    	a++;
+	}
+}
+==========================================
+ການນຳໃຊ້ if,elseif
+lesson18 if else.c
+18.  ຈົ່ງວາງຕົວປ່ຽນ age ເພື່ອຄໍານວນ ອາຍຸ ໃຫ້ປ້ອນປີ ເກີດ ໃສ່ ໂດຍໃຊ້ຄໍາສັ່ງ scanf();
+	ຖ້າອາຍຸ 18 ລົງມາ ໃຫ້ບອກວ່າ:   "You are Still Young!"
+	18 ຂື້ນໄປ ໃຫ້ບອກວ່າ:  "You are mature!"
+
+--------------
+ int age;
+    printf("Enter age:");
+    scanf("%d",&age);
+   if(age<18)
+        printf("You are Still Young");
+    else
+        printf("You are mature");
+==========================
+lesson19 if else.c
+19. ຈົ່ງວາງຕົວປ່ຽນ age ເພື່ອປ້ອນ ອາຍຸ:
+ຖ້າອາຍຸ 18ລົງມາ ໃຫ້ບອກວ່າ ("You are Still Young!")
+ຖ້າອາຍຸ >=18 ຫາ <=30  ໃຫ້ບອກວ່າ ("You are mature!")
+ຖ້າອາຍຸ >30 ຫາ <=60  ໃຫ້ບອກວ່າ ("You are Old!")
+ຖ້າອາຍຸ 60 ຂື້ນໄປ ໃຫ້ບອກວ່າ ("You are very Old.")
+
+
+#include <stdio.h>
+int main()
+{
+int age;
+    printf("Enter age:");
+        scanf("%d",&age);
+if(age<18)
+    printf("You are Still Young.");
+else if(age>=18 && age<=30)
+    printf("You are mature.");
+else if(age>30 && age<=50)
+    printf("You are Old.");
+else
+    printf("You are Very Old.");
+}
+
+===============================================
+lesson20 ifelse.c
+20. ຈົ່ງວາງຕົວປ່ຽນ m ເພື່ອຂຽນ ລາຍການ ໂດຍໃຊ້ຄຳສັ່ງ if,elseif
+	ໂດຍປ້ອນ ລາຍການ f,c,d ແລ້ວໃຫ້ ລາຄາ ອອກມາ. ໃຊ້ຄຳສັ່ງ scanf();
+ກຳນົດລາຍການດັ່ງນີ້:   ຖ້າຫາກວ່າປ້ອນ f =  fan ໃຫ້ລາຄາ 130.000 ມາສະແດງ.
+		ຖ້າຫາກວ່າປ້ອນ c = cat ໃຫ້ລາຄາ 60.000 ມາສະແດງ.
+		ຖ້າຫາກວ່າປ້ອນ d = dog ໃຫ້ລາຄາ 40.000 ມາສະແດງ.
+		ຖ້າປ້ອນນອກຈາກນັ້ນ ໃຫ້ບອກວ່າ No price;
+
+
+#include <stdio.h>
+void main()
+{
+	char m;
+	printf("f = fish\n");
+	printf("c = chicken\n");
+	printf("d = duck\n");
+	printf("select menu: ");
+	scanf("%c",&m);
+	if (m=='f')
+        printf("50000\n");
+	else if(m=='c')
+        printf("2000\n");
+	else if(m=='d')
+        printf("4000\n");
+	else
+        printf("No price");
+}
+
+========================================
+lesson21 grade.c
+21. ຈົ່ງວາງຕົວປ່ຽນ s ເພື່ອປ້ອນຕົວເລກ ຄິດໄລ່ເກຣດ ດັ່ງນີ້: 
+- ຖ້າຄະແນນ <50 ໃຫ້ບອກວ່າ "Grade F";  
+- ຖ້າຄະແນນ >=50 - <=70 ໃຫ້ບອກວ່າ "Grade D";
+- ຖ້າຄະແນນ >70 - <=80 ໃຫ້ບອກວ່າ "Grade C";
+- ຖ້າຄະແນນ >80 - <=99 ໃຫ້ບອກວ່າ "Grade B";
+- ຖ້າຄະແນນ =100 ໃຫ້ບອກວ່າ "Grade A";
+- ຖ້າຄະແນນ >100 ໃຫ້ບອກວ່າ "Error";
+
+#include<stdio.h>
+int main()
+{
+    float s; //score'
+    printf("Enter Score:");
+        scanf("%f",&s);
+if(s<50)
+    printf("Grade F");
+else if(s>=50 && s<60)
+    printf("Grade D");
+else if(s>=50 && s<70)
+    printf("Grade C");
+else if(s>=70 && s<=99)
+    printf("Grade B");
+else if(s<=100)
+    printf("Grade A");
+else
+    printf("Error");
+}
+===================
+lesson22 simpleinterest.c
+22. ຈົ່ງວາງຕົວປ່ຽນຄິດໄລ່ດອກເບ້ຍເງີນກູ້ດັ່ງນີ້:  ເງີນຕົ້ນທຶນ pv= 100000, ອັດຕາດອກເບ້ຍ r= 15%, ໄລຍະເວລາ  t = 3ປີ ຈົ່ງຊອກຫາດອກເບ້ຍ ແລະ ເງີນລວມທັງໝົດ ເທົ່າໃດ?
+ກຳນົດໃຫ້:​ ດອກເບ້ຍ(I) ແລະ ເງີນລວມ(Fv)ອອກມາສະແດງ
+
+ #include <stdio.h>
+main()
+{
+   int pv,t,I,Fv;
+    float r;
+    pv=100000;
+    t=3;
+    r=0.15;
+    I=pv*r*t;
+    Fv=pv+I;
+    printf("I = %d.\nFv = %d.",I,Fv);
+}
+
+==============================
+lesson23.c
+23. ຄິດໄລ່ດອກເບ້ຍງາຍດາຍ ຕົ້ນທຶນ(pv)=200000 ດອກເບ້ຍ(I)= 5% ເວລາ(t)=3ປີ, ຖາມວ່າ: ເງີນລວມ(fv) ແລະ ອັດຕາດອກເບ້ຍ(r) ເທົ່າໃດ?
+I = pv*r*t ສູດຊອກຫາ ດອກເບ້ຍ
+Fv = Pv+I ສູດຊອກຫາ ເງີນລວມທັງໝົດ. 
+ຊອກຫາ:​ r=?
+
+#include <stdio.h>
+void main()
+{
+    float pv,I,t,r,fv;
+    pv=200000;
+    I = 0.05;
+    t = 3;
+    r = pv*I/t;
+    fv = pv+r;
+    printf("r = %f \nfv = %f",r,fv);
+}
+
+#include<stdio.h>
+int main()
+float pv,fv,i,r,t;
+pv=20000;
+i=0.05
+t=3;
+r=(pv*i)/12;
+fv=pv*r*t;
+printf("r = %f",r);
+printf("\n fv= %f",fv);
+
+=====================
+ໃນພາສາ C++
+------
+ການສະແດງຜົນ
+1. ການເອົາຂໍ້ມູນມາສະແດງ:  cout<<"..."; 
+		  printf("....");
+
+2. ການເອົາຕົວປ່ຽນມາສະແດງ:   cout<<ຕົວປ່ຽນ;
+			printf(ຊື່ຕົວປ່ຽນ);
+
+3. ເອົາຄໍາເວົ້າ ແລະ ຕົວປ່ຽນມາສະແດງ:  cout<<" ຄຳເວົ້າ " <<ຕົວປ່ຽນ;
+			printf("ຄຳເວົ້າ",ຊື່ຕົວປ່ຽນ);
+
+4. ການປ້ອນຂໍ້ມູນ ທຸກປະເພດ ທັງຕົວເລກ ແລະ ຕົວອັກສອນ:   cin>>ຕົວປ່ຽນ;
+					scanf("",&ຊື່ຕົວປ່ຽນ);
+5. <<endl;  ເປັນຄຳສັ່ງລົງແຖວ = end line
+
+====================================
+Arithmetic Operator:  
++ Addition (ບວກ)
+- Subtraction (ລົບ)
+* Multiplication (ຄູນ)
+/ Division (ຫານ)
+==================================
+ສົມທຽບ  (Comparison)
+>     greater than 
+<     less than
+>=    greater than or equal to
+<=    small than or equal to
+==    equal to  (ເທົ່າກັບ ໃຊ້ສົມທຽບ)
+=     Assign  (ກໍານົດໃຫ້)e.g ກຳນົດໃຫ້  x = 10.5 
+==========================================
+Logical Operators
+==========================================
+&&  AND  ແລະ
+||   or   ຫລື 
+!    NOT  
+!=   Not equal to ບໍ່ເທົ່າກັບ  (<>)
+==================================
+++  ເພີ່ມຂື້ນ 1    x++  ເພີ່ມຂື້ນເທື່ອລະ 1
+--  ຫລຸດລົງ 1    x--   ຫລຸດລົງ
+
+A=A+B  ຫລືຂຽນ   A+=B;  A=10;  A=A+5-->A+=5
+A=A-B         A-=B;
+A=A*B         A*=B
+A=A/B	      A/=B;
+====================================
+ຈົ່ງຂຽນ ໂປຣແກຣມ ເພື່ອຊອກຫາ ເງິນພາສີ ທີ່ຕ້ອງຈ່າຍ:
+ໃຫ້ປອ້ນຂໍ້ມູນເປັນລາຍເດືອນ:
+ແລະຈາກນັ້ນໃຫ້ຄຳນວນລາຍຮັບເປັນລາຍປີ:
+ຖ້າຫາກວ່າ ລາຍຮັບ ຫາກ 10 000 000 ຂື້ນໄປ ເສຍພາສີ 8%  ຖ້າຫລຸດນັ້ນບໍ່ໄດ້ເສຍ
+
+====================================================
+
+ເພື່ອສະແດງ ເລກ ເສດ ໃຫ້ລະອຽດ (ບໍ່ເປັນລັກສະນະ Scientific 1.2e7)
+
+ຈະຂຽນ:  
+#include <iomanip>
+ຢູ່ສ່່ວນຫົວ:
+
+std::cout<<setprecision(15);
+std:cout<<ຕົວປ່ຽນ;
+==========================================================
+ການແກ້ບັນຫາ:  (Problem Solving)
+
+ຖ້າໃຫ້ຕົວເລກ ອັນໃດນຶ່ງມາ,  ຕ້ອງການຮູ້ວ່າ ຕົວເລກນັ້ນ ເປັນເລກ ຄູ່, ຄິກ ຮູ້ໄດ້ແນວໃດ, ເຮັດແນວໃດ?
+=======================================================
+ເລກຄູ່ ເປັນເລກ ທີ່ຫານຂາດ ໃຫ້ 2 
+
+ຕົວປ່ຽນ ທີ່ຕ້ອງກຳນົດ:
+ຕົວລັບ/ຕົວປ່ຽນ  ເກັບຂໍ້ມູນຕົວເລກ ທີ່ປ້ອນມາ  int a
+ວາງຕົວປ່ຽນຮັບຜົນ ການຄິດໄລ່ ຕົວເລກຫານຂາດ   int result
+===============================
+ການຊອກຫານຂາດ ຫລື ບໍ່ຂາດ ນຳໃຊ້ modulus  %
+ຕົວຢ່າງ:  10%3 =  1
+       10%2=   0
+===========================================
+lesson1
+1. ຈົ່ງເອົາຄໍາເວົ້າວ່າ "Welcome" ມາສະແດງ. (.cpp)
+
+ພາສາ C++    .cpp
+#include <iostream>
+using namespace std;
+int main(){
+cout<<"Welcome";
+
+return 0; 
+}
+ຕົວທີ່ມາສະແດງຜົນແມ່ນ: Welcome
+=============================
+2. ຈົ່ງເອົາຄໍາເວົ້າທໍາມະດາມາສະແດງດັ່ງນີ້: .cpp
+	Hello Everybody.
+	My name is John.
+	I live in Nonsawang village.
+	I study at BCT College.
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello Everybody.\n";
+    cout<<"My name is John.\n";
+    cout<<"I live in nonsawang village.\n";
+    cout<<"I study at BCT College.\n";
+
+    return 0;
+}
+================
+3. ຈົ່ງວາງຕົວປ່ຽນ x=50; y=100 ເອົາຄ່າ x,y ມາສະແດງ .cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x,y;
+  x = 50;
+  y = 100;
+  cout <<x<<endl<<y;
+}
+
+=====================
+7. ຈົ່ງວາງຕົວປ່ຽນ a=100; b=200; c=? ຈາກນັ້ນເອົາຜົນຄູນຂອງ c ມາສະແດງ (.cpp)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a=100,b=200,c;
+    c=a*b;
+    cout<<"c="<<c;
+}
+========================
+homework:
+4.  ຈົ່ງວາງຕົວປ່ຽນ name ແລະ age ເພື່ອເອົາຊື່ Bob ອາຍຸ 30 ປີມາສະແດງ (.cpp)
+My name is ....
+I'm .... years old.
+
+#include <iostream>
+using namespace std;
+int main() {
+    char name[50]="Bob";
+    int age = 35;
+    cout<<"My name is " <<name<<endl;
+    cout << "I am " <<age << " years old.";
+}
+====================
+(.cpp)
+ຈົ່ງວາງຕົວປ່ຽນ ເພື່ອເອົາ ຊື່, ອາຍຸ, ເພດ​,​ ບ້ານ, ເບີໂທ ມາສະແດງ.
+#include <iostream>
+using namespace std;
+int main() {
+    char name[50]="Jannifer";
+    int age = 20;
+	char gender[10] ="Gender";
+	char vill[20]="Nonsawang";
+	int tell=0205565655;
+    cout << "My name is " <<name<<endl;
+    cout << "I am " <<age << " years old."<<endl;
+	cout << "Gender is " <<gender<<endl;
+	cout << "I live is " <<vill<<"village."<<endl;
+	cout << "My tell is" <<tell<<endl;
+}
+
+================================
+5. ຈົ່ງວາງຕົວປ່ຽນເພື່ອປ້ອນຊື່ ແລະ ເອົາຊືີ່ທີ່ປ້ອນອອກມາສະແດງ. (.cpp)
+
+#include <iostream>
+using namespace std;
+int  main()
+{
+    char name[20];
+    cout<<"Enter name: ";
+    cin>>name;
+    cout<<"Name is"<<name;
+}
+
+===========================================
+6. ຈົ່ງວາງຕົວປ່ຽນ name, age, tel, status  ແລະ ເອົາຊືີ່, ອາຍຸ, ເບີໂທ, ສະຖານະ ທີ່ປ້ອນອອກມາສະແດງ. (.cpp)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    char name[80];
+    char stt[20];
+    int age,tel;
+    cout<<"Enter name:"; cin>>name;
+    cout<<"Enter age:"; cin>>age;
+    cout<<"Enter tel:"; cin>>tel;
+    cout<<"Enter stt:"; cin>>stt;
+
+    cout<<"My name is "<<name<<endl;
+    cout<<"I'm "<<age<<" years old."<<endl;
+    cout<<"My tel is "<<tel<<endl;
+    cout<<"My stt "<<stt<<endl;
+}
+
+======================
+8. ຈົ່ງວາງຕົວປ່ຽນ n ເພື່ອເອົາຕົວເລກ 1-10 ມາສະແດງ ໂດຍນໍາໃຊ້ for loop. (.cpp)
+
+#include <iostream>
+using namespace std;
+int main(){
+	for(int i=1; i<=10; i++){
+	cout<<"\n"<<i;
+	}
+}
+==========================
+ຈົ່ງວາງຕົວປ່ຽນ d ເພື່ອເອົາເລກ 100-1000 ມາສະແດງ ໂດຍນຳໃຊ້ whlie loop ແລະ ໃຫ້ເພີ່ມຂື້ນ ເທື່ອລະ 5
+
+===================
+10. ຈົ່ງວາງຕົວປ່ຽນ a ເພື່ອເອົາຕົວເລກ 1-50 ມາສະແດງ ໂດຍໃຫ້ເພີ່ມຂື້ນເທື່ອລະ3
+ຕົວຢ່າງ: 3,6,9,12... ໂດຍນໍາໃຊ້ for loop.
+
+#include <stdio.h>
+int main(){
+int i;
+for(a=3;a<=50;a+=3)
+    printf("%d\n",a);
+}
+======================
+11. ຈົ່ງວາງຕົວປ່ຽນ n ເພື່ອເອົາເລກ 10-20 ມາສະແດງໂດຍນຳໃຊ້ while loop
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n=10;
+  while(n<=20)
+    cout<<n++<<endl;
+
+}
+=========================
+12. ຈົ່ງວາງຕົວປ່ຽນ i ເພື່ອເອົາຕົວເລກ 100-500 ມາສະແດງ ໂດຍໃຫ້ເພີ່ມຂື້ນເທື່ອລະ100
+ຕົວຢ່າງ: 100,200,300... ໂດຍນໍາໃຊ້  while loop.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i = 100;
+  while (i<=500) {
+    cout << i <<endl;
+    i+=100;
+  }
+}
+====================
+13. ຈົ່ງວາງຕົວປ່ຽນ i ເພື່ອເອົາຕົວເລກ 500-100 ມາສະແດງ ໂດຍໃຫ້ເພີ່ມຂື້ນເທື່ອລະ100
+ຕົວຢ່າງ: 500.,400,300... ໂດຍນໍາໃຊ້  while loop.
+
+#include <iostream>
+using namespace std;
+int main(){
+int i;
+i=600;
+while(i>100){
+    i-=100;
+    cout<<i<<endl;
+}
+}
+===================
+14. ຈົ່ງວາງຕົວປ່ຽນ d ເພື່ອເອົາເລກ 1-10​ ມາສະແດງ ໂດຍນໍາໃຊ້ do while loop
+
+#include <iostream>
+using namespace std;
+int main() {
+  int d = 1;
+  do {
+    cout <<d<<endl;
+    d++;
+  }
+  while (d<=10);
+}
+==========================
+15. ຈົ່ງວາງຕົວປ່ຽນ d ເພື່ອເອົາຕົວເລກ 10-50 ມາສະແດງ ໂດຍໃຫ້ເພີ່ມຂື້ນເທື່ອລະ5
+ຕົວຢ່າງ: 10,15,20,25... ໂດຍນໍາໃຊ້ do while loop.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int d=10;
+  do {
+    cout <<d<<endl;
+    d+=5;
+  }
+  while (d<=50);
+}
+
+======================
+16. ຈົ່ງວາງຕົວປ່ຽນ m ເພື່ອກຳນົດເລກ 100-1000​ ນໍາໃຊ້ຄໍາສັ່ງ break  ໃຫ້ເພີ່ມຂື້ນເທື່ອລະ100 ໂດຍໃຫ້ເລກ 100,200,300,400,500 ມາສະແດງ ນໍາໃຊ້ for loop 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  for (int m = 100; m <=1000; m+=100) {
+    if (m == 500) {break;}
+    cout << m <<endl;
+  } 
+}
+===========
+9. ຈົ່ງນໍາໃຊ້ if else ເພື່ອວາງຕົວປ່ຽນ x,y ເພື່ອປ້ອນຂໍ້ມູນ ໂດຍໃຫ້ປ້ອນຄ່າ x ແລະ y ເພື່ອການສົມທຽບວ່າ: ຖ້າປ້ອນຕົວເລກໃດໝ້ອຍ ຫຼື ຫຼາຍກວ່າໃຫ້ບອກ ວ່າ:​ x<y, x>y ແລະ x=y.
+x = 30;
+y = 10;
+x=y;
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float x,y;
+    cout<<"Enter X=";
+        cin>>x;
+    cout<<"Enter Y=";
+        cin>>y;
+if(x==y){ 
+cout<<"X=Y";}
+else if(x<y){ 
+cout<<"X<Y";}
+else { cout<<"X>Y";}
+}
+========================
+17. ຈົ່ງວ່າງຕົວປ່ຽນ a,b ນຳໃຊ້ if else ເພື່ອປ້ອນ ຕົວເລກ ສົມທຽບວ່າ:
+ຖ້າຫາກວ່າ ຄ່າ a ໃຫ່ຍກວ່າຄ່າ b ໃຫ້ບອກວ່າ: ... Is Bigger than ...
+ຖ້າຫາກວ່າ ຄ່າ a ນ້ອຍກວ່າຄ່າ b ໃຫ້ບອກວ່າ: ... Is Small than ... 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cout<<"Enter a:"; cin>>a;
+    cout<<"Enter b:"; cin>>b;
+    if(a>b)
+        cout<<"Is Bigger than";
+    else
+        cout<<"Is Small than";
+}
+
+============================================
+18. ຈົ່ງ age, ynow ເພື່ອປ້ອນ ປີເກີດ ໂດຍຂຽນ ປີເກີດ ລົບໃຫ້ປີປະຈຸບັນ ອອກເປັນອາຍຸ:
+	ຖ້າ ອາຍຸ 18 ປີລົງມາ ໃຫ້ບອກວ່າ: "Age Is ... Years old. You are Still Young";
+	ຖ້າ ອາຍຸ 18-30 ໃຫ້ບອກວ່າ: "Age Is ... Years old. You are  Young";
+	ຖ້າ ອາຍຸ 30 ຂື້ນໄປໃຫ້ບອກວ່າ: "Age Is ... Years old. You are mature";
+
+
+#include <iostream>
+using namespace std;
+int main(){
+
+int y, age, ynow=2020;
+
+cout<<"Enter birth year = ";
+cin>>by;
+age=ynow-y;
+if(age<=18)
+    cout<<"Age is: " <<age <<" years old"<<endl<<"So you are Still Young";
+else if(age>18 && age<=30)
+cout<<"Age is "<<age<<" years old"<<endl<<"You are Young";
+else
+    cout<<"Age is "<<age<<" years old"<<endl<<"You are mature";
+}
+
+========================================
+19. ຈົ່ງວາງຕົວປ່ຽນ s(score)ເພື່ອຄິດໄລ່ເກຣດ ດັ່ງນີ້:  (.cpp)
+- ຖ້າຄະແນນ <1 ໃຫ້ບອກວ່າ "Grade F";
+- ຖ້າຄະແນນ >=1 - <2 ໃຫ້ບອກວ່າ "Grade D";
+- ຖ້າຄະແນນ >=2 - <3 ໃຫ້ບອກວ່າ "Grade C";
+- ຖ້າຄະແນນ >=3 - <3.9 ໃຫ້ບອກວ່າ "Grade B";
+- ຖ້າຄະແນນ =4 ໃຫ້ບອກວ່າ "Grade A";
+- ຖ້າຄະແນນ >4 ໃຫ້ບອກວ່າ "Error";
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   double x;
+   cout<<"Enter x =";
+    cin>>x;
+    if(x<1)
+        cout<<"Grade F" <<endl;
+    else if(x>=1 && x<2)
+         cout<<"Grade D" <<endl;
+    else if(x>=2 && x<3)
+         cout<<"Grade c" <<endl;
+    else if(x>=3 && x<3.9)
+         cout<<"Grade B" <<endl;
+    else if(x==4)
+         cout<<"Grade A" <<endl;
+   else
+        cout<<"Error" <<endl;
+}
+==================================
+20. ຈົ່ງວາງຕົວປ່ຽນ name, age, score, grade ເພື່ອປ້ອນເອົາຊື່, ອາຍຸ,​ ຄະແນນ ມາສະແດງຜົນ  
+ໝາຍເຫດ: ປ້ອນຄະແນນ ແລ້ວ ເກຣດ ອອກມາ auto
+- ຖ້າຄະແນນ <1 ໃຫ້ບອກວ່າ "Grade F";
+- ຖ້າຄະແນນ >=1 - <2 ໃຫ້ບອກວ່າ "Grade D";
+- ຖ້າຄະແນນ >=2 - <3 ໃຫ້ບອກວ່າ "Grade C";
+- ຖ້າຄະ ແນນ >=3 - <3.9 ໃຫ້ບອກວ່າ "Grade B";
+- ຖ້າຄະແນນ =4 ໃຫ້ບອກວ່າ "Grade A";
+- ຖ້າຄະແນນ >4 ໃຫ້ບອກວ່າ "Error";
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    char name[20];
+    int age;
+    float s;
+    char grade;
+    cin>>name;
+    cin>>age;
+    cin>>s;
+    if(s<1)
+        cout<<"Grade F"<<endl;
+    else if(s>=1 && s<=1.9)
+        cout<<"Grade D"<<endl;
+    else if(s>=2 && s<=2.9)
+        cout<<"Grade C"<<endl;
+    else if(s>=3 && s<=3.9)
+        cout<<"Grade B"<<endl;
+    else if(s<=4)
+        cout<<"Grade A"<<endl;
+    else
+        cout<<"Error"<<endl;
+    cout<<name<<age<<grade<<s;
+}
+=====================
+21. ຈົ່ງວາງຕົວປ່ຽນ f ເພື່ອປ້ອນ ຕົວອັກສອນ ນຳໃຊ້ if else ກຳນົດ:
+	ຖ້າປ້ອນ m ໃຫ້ບອກວ່າ "This is Mango";
+	ຖ້າປ້ອນ o ໃຫ້ບອກວ່າ "This is Orange";
+	ຖ້າປ້ອນ b ໃຫ້ບອກວ່າ "This is Banana";
+	ຖ້າປ້ອນ p ໃຫ້ບອກວ່າ "This is Papaya";
+	ຖ້ານອກຈາກນັ້ນ ໃຫ້ບອກວ່າ "No Fruit";
+
+
+#include <iostream>
+using namespace std;
+int main() {
+  char f;
+  cin>>f;
+  if(f=='m')
+    cout <<"This is Mango";
+  else if(f=='o')
+    cout<< "This is Orange";
+  else if(f=='b')
+    cout<<"This is Banana";
+  else if(f=='p')
+    cout<<"This is Papaya";
+  else 
+    cout<<"No Fruit";
+}
+=================
+22. ຈົ່ງວາງຕົວປ່ຽນ time ເພື່ອປ້ອນເວລາດັ່ງນີ້:
+	ຖ້າວ່າ ເວລາ 6-12 ໂມງເຊົ້າ ໃຫ້ບອກ "Good Morning";
+	ຖ້າວ່າ ເວລາ 12-18 ໂມງແລງ ໃຫ້ບອກ "Good Afternoon";
+	ຖ້າວ່າ ເວລາ 18 ໂມງຂື້ນໄປໃຫ້ບອກວ່າ "Good Evening";
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int time;
+    cout<<"Enter time:";
+    cin>>time;
+    if(time>=6 && time<=12)
+        cout<<"Good Morning";
+    else if(time>12 && time<=18)
+        cout<<"Good Afternoon";
+    else
+        cout<<"Good Evening";
+}
+
+=======================
+23. ຈົ່ງວາງຕົວປ່ຽນ day ເພື່ອເອົາມື້ປະຈຸບັນມາສະແດງ ໂດຍນຳໃຊ້ switch
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int day=5;
+    switch(day)
+    {
+    case 1:cout<<"monday";break;
+    case 2:cout<<"tuesday";break;
+    case 3:cout<<"wednesday";break;
+    case 4:cout<<"thursday";break;
+    case 5:cout<<"friday";break;
+    case 6:cout<<"saturday";break;
+    case 7:cout<<"sunday";
+    }
+}
+====================
+24. ຈົ່ງວາງຕົວປ່ຽນ day  ນໍາໃຊ້ Switch ເພື່ອສະແດງ ວັນເສົາ ແລະ ວັນອາທິດ ຖ້າບໍ່ແມ່ນວັນ ເສົາ ແລະ ອາທິດ ໃຫ້ມັນບອກວ່າ "ລໍຖ້າໃຫ້ຮອດທ້າຍອາທິດ".
+
+
+#include <iostream>
+using namespace std;
+int main() {
+  int day = 4;
+  switch (day) {
+    case 6:
+      cout << "Today is Saturday";
+      break;
+    case 7:
+      cout << "Today is Sunday";
+      break;
+    default:
+      cout << "Looking forward to the Weekend";
+  }
+  return 0;
+}
+========================
+25. ຈົ່ງວາງຕົວປ່ຽນ g ເພື່ອປ້ອນ ຄ່າ  A,B,C ໂດຍນຳໃຊ້ Switch 
+	ຖ້າປ້ອນ A ໃຫ້ບອກວ່າ "Excellent";
+	ຖ້າປ້ອນ B ໃຫ້ບອກວ່າ "Very Good";
+	ຖ້າປ້ອນ C ໃຫ້ບອກວ່າ "You Passed";
+	ຖ້ານອກຈາກນັ້ນ ໃຫ້ບອກວ່າ "Invalid Entry";
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    char g;
+    cin>>g;
+    switch(g)
+    {
+    case 'A': cout<<"Excellent"; break;
+    case 'B': cout<<"Very Good"; break;
+    case 'C': cout<<"You Passed"; break;
+    default: cout<<"Invalid Entry"; break;
+    }
+}
+
+===========================================
+ຈົ່ງຂຽນ C, C++  ເພື່ອຊອກຫາ ຈຳນວນ ດິນຈີ່ ທີ່ຈະກໍ່ ຝາ 
+ເປັນຮູບ 4 ແຈ ສາກ,  ພວກເຮົາຮູ້ວ່າ:  1 ຕາລາງແມັດ ໃຊ້ດິນຈີ່ 15 ກ້ອນ.
+===========================================
+ວາງແຜນ:
+ຮູບສີ່ແຈສາກ:  ສອງຂ້າງຂະໜານກັນ ມີຂ້າງຍາວ ຍາວກວ່າຂ້າງກວ້າງ:
+ກ່ອນອື່ນ ຈະຕ້ອງຮູ້ວິທີການຊອກຫາ ເນື້ອທີ່ຮູບສີ່ແຈສາກ
+ A =  a*b
+ຈາກນັ້ນຊອກຫາຈຳນວນດິນຈີ່ທີ່ຈະມາໃຊ້ກໍ່:
+B = A*15;
+=============================
+ວິທີຂຽນໂປຣແກຣມ:
+ກ່ອນວາງຕົວປ່ຽນເປັນເລກເສດ ໃຫ້ແກ່ ຂ້າງ ຍາວ, ກວ້າງ
+float a, b
+float  B, A   // ຈຳນວນດິນຈີ່ ທີ່ຈະໃຊ້, ເນື້ອທີ່ຮູບ ສີ່ແຈສາກ
+===============================
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main(){
+	float a, b;
+	float B, A;
+cout<<"\t----------------\n";
+cout<<"\t Enter a: ";
+cin>>a;
+cout <<"Enter b: ";
+cin>>b;
+A= a*b;
+B= A*15;
+cout<<"Area of Rectangle: "<<A<<endl;
+cout<<"Number of Break:  " <<B<<endl;
+
+return 0;
+system ("pause");
+
+}
